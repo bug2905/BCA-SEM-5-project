@@ -1,0 +1,31 @@
+# Core dependencies
+streamlit==1.29.0
+chromadb==0.4.22
+sentence-transformers==2.2.2
+
+# ChromaDB dependencies
+pydantic==2.5.3
+hnswlib==0.8.0
+chroma-hnswlib==0.7.3
+
+# Sentence Transformers dependencies
+torch==2.1.2
+torchvision==0.16.2
+transformers==4.36.2
+huggingface-hub==0.20.2
+
+# Web scraping (for web_to_txt.py)
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Additional utilities
+numpy==1.24.3
+pandas==2.0.3
+protobuf==4.25.1
+typing-extensions==4.9.0
+
+# For better stability
+certifi==2023.11.17
+charset-normalizer==3.3.2
+idna==3.6
+urllib3==2.1.0

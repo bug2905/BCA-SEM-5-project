@@ -1,0 +1,25 @@
+# WINDOWS-COMPATIBLE REQUIREMENTS
+# Updated to fix ChromaDB version compatibility issues
+
+# Core dependencies
+streamlit==1.29.0
+
+# ChromaDB - use 0.4.x which is more stable on Windows
+chromadb==0.4.22
+
+# Sentence Transformers
+sentence-transformers==2.2.2
+
+# Supporting libraries (will be installed automatically with above)
+# But listing them explicitly for clarity
+numpy<2.0.0  # ChromaDB 0.4.x requires numpy < 2.0
+pydantic>=1.9,<3.0
+
+# Web scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Note: torch will be installed automatically by sentence-transformers
+# If you want CPU-only torch to save space, first run:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Then install the rest with: pip install -r requirements.txt --no-deps
